@@ -1,1 +1,1 @@
-# study-technologies
+# Study Technologies
