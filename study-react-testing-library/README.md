@@ -23,7 +23,8 @@ screen.getByText(/XXXXX/i);
 
 1. 大多數時候都用 `get` 而非 `find` 或者 `query`
 
-![Get vs. Find vs. Query](./images/GetFindQuery)
+![Get vs. Find vs. Query](./images/GetFindQuery.png)
+*https://www.youtube.com/watch?v=Yghw9FkNGsc&list=PL4cUxeGkcC9gm4_-5UsNmLqMosM-dzuvQ&index=5*
 
 ## References
 
