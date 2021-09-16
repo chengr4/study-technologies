@@ -23,6 +23,8 @@ screen.getByText(/XXXXX/i);
 
 1. 大多數時候都用 `get` 而非 `find` 或者 `query`
 
+![Get vs. Find vs. Query](./images/GetFindQuery)
+
 ## References
 
 1. https://testing-library.com/docs/react-testing-library/intro/
