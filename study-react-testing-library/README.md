@@ -2,7 +2,7 @@
 
 1. A testing file is usually named `<Component>.test.js`. E.g. `App.test.js`
 
-test function:
+Test function:
 
 ```javascript
 test('what you what to name', () => {});
@@ -13,11 +13,17 @@ it('what you what to name', () => {});
 ## APIs
 
 `render`: render an Component into virtual DOM
+
 `screen`: 
 
 ```javascript
 screen.getByText(/XXXXX/i);
 ```
+
+### Methods
+
+1. `ByRole`: heading, button..
+2.  
 
 ## Tips
 
@@ -25,6 +31,16 @@ screen.getByText(/XXXXX/i);
 
 ![Get vs. Find vs. Query](./images/GetFindQuery.png)
 *https://www.youtube.com/watch?v=Yghw9FkNGsc&list=PL4cUxeGkcC9gm4_-5UsNmLqMosM-dzuvQ&index=5*
+
+```javascript
+// find example (async)
+test('render same text passed into title prop', async () => {
+  // render Header into virtual DOM
+  render(<Header title={"MY HEADER"} />);
+  const headingElement = await screen.findByRole("heading", { name: "MY HEADER"});
+  expect(headingElement).toBeInTheDocument();
+});
+```
 
 ## References
 
