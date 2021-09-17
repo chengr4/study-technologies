@@ -2,6 +2,13 @@
 
 1. A testing file is usually named `<Component>.test.js`. E.g. `App.test.js`
 
+## In Test Block
+
+1. Render a component to test
+2. Find elements we want to interact with
+3. Interact with those elements
+4. Assert that results are as expected
+
 Test function:
 
 ```javascript
