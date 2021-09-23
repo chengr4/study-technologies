@@ -66,6 +66,18 @@ test('render same text passed into title prop', async () => {
 describe('Your Description', () => {});
 ```
 
+## Before and After Each
+
+```javascript
+beforeEach(() => {console.log("Running before each test");});
+
+beforeAll(() => {console.log("Running once before all tests");});
+
+afterEach(() => {console.log("Running after each test");});
+
+afterAll(() => {console.log("Running once after all tests");});
+```
+
 ## References
 
 1. https://testing-library.com/docs/react-testing-library/intro/
