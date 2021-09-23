@@ -19,12 +19,23 @@ it('what you what to name', () => {});
 
 ## APIs
 
-`render`: render an Component into virtual DOM
+`render`: Render an Component into virtual DOM
 
 `screen`: 
 
 ```javascript
 screen.getByText(/XXXXX/i);
+```
+
+`fireEvent`: Trigger event
+
+```javascript
+// E.g.
+const inputElement = screen.getByPlaceholderText(/Add a new task here/i);
+
+// trigger type event
+fireEvent.change(inputElement, { target: { value: "Go shopping"} });
+expect(inputElement.value).toBe("Go shopping");
 ```
 
 ### Methods
@@ -47,6 +58,12 @@ test('render same text passed into title prop', async () => {
   const headingElement = await screen.findByRole("heading", { name: "MY HEADER"});
   expect(headingElement).toBeInTheDocument();
 });
+```
+
+## Descirbe Block
+
+```javascript
+describe('Your Description', () => {});
 ```
 
 ## References
