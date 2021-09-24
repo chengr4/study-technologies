@@ -1,0 +1,7 @@
+input {
+  border-width: 1;
+  border-color: '#DDD';
+  padding: 10px;
+  font-size: 18;
+  border-radius: 6;
+}
