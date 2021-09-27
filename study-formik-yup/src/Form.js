@@ -1,5 +1,22 @@
 import React from "react";
 import { Formik } from "formik";
+import * as yup from 'yup';
+
+const schema = yup.object({
+  first_name: yup.string().required(),
+  last_name: yup.string().required(),
+  email: yup.string().email('Must be a valid email'),
+  password: yup.string()
+    .min(8, 'Must be at least 8 characters')
+    .max(255),
+  confirmPassword: yup.string().when('password', {
+    is: (val) => (val && val.length > 0 ? true : false),
+    then: yup.string().oneOf(
+      [yup.ref('password')],
+      'Both password need to be the same',
+    ),
+  }),
+});
 
 function Form() {
   return (
@@ -11,8 +28,8 @@ function Form() {
           email: '',
           password: '',
           confirmPassword: '',
-          submit: false,
         }}
+        validationSchema={schema}
         onSubmit={(values, actions) => {
           actions.resetForm();
           console.log(values);
@@ -21,7 +38,7 @@ function Form() {
         {(formikProps) => (
           <>
             <input
-              type="text" 
+              type="text"
               value={formikProps.values.first_name}
               onChange={formikProps.handleChange('first_name')}
             />
