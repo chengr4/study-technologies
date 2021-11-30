@@ -2,11 +2,12 @@
 
 ## Contents
 
-+ [Study Gulp](./study-gulp)
++ [Study axios](./study-axios)
 + [Study Canvas](./study-canvas)
 + [Study Dotenv](./study-dotenv)
 + [Study Eslint](./study-eslint)
-+ [Study React Testing Library](./study-react-testing-library)
 + [Study Formik and Yup](./study-formik-yup)
-+ [Study Redux](./study-redux)
++ [Study Gulp](./study-gulp)
 + [Study Github Action](./study-github-action)
++ [Study Redux](./study-redux)
++ [Study React Testing Library](./study-react-testing-library)
