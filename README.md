@@ -15,4 +15,4 @@
 
 ## Others
 
-1. https://chiahsien.github.io/post/visual-studio-code-extensions/
+1. [必備的 Visual Studio Code 套件](https://chiahsien.github.io/post/visual-studio-code-extensions/)
