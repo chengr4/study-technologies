@@ -12,3 +12,7 @@
 + [Study Gitlab CI/CD](./study-gitlab-CICD)
 + [Study Redux](./study-redux)
 + [Study React Testing Library](./study-react-testing-library)
+
+## Others
+
+1. https://chiahsien.github.io/post/visual-studio-code-extensions/
