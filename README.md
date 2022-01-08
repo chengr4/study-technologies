@@ -2,6 +2,7 @@
 
 ## Contents
 
++ [Study AWS](./study-aws)
 + [Study axios](./study-axios)
 + [Study Canvas](./study-canvas)
 + [Study Dotenv](./study-dotenv)
