@@ -1,5 +1,9 @@
 # Study axios
 
+- [axios API](#axios-api)
+- [Request Config](#request-config)
+- [Interceptors](#interceptors)
+
 ## axios API
 
 ### Creating an instance
@@ -10,6 +14,18 @@ const instance = axios.create({
   timeout: 1000,
   headers: {'X-Custom-Header': 'foobar'}
 });
+```
+
+## Request Config
+
+```javascript
+{
+  // `params` are the URL parameters to be sent with the request
+  // Must be a plain object or a URLSearchParams object
+  params: {
+    ID: 12345
+  },
+}
 ```
 
 ## Interceptors
