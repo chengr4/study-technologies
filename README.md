@@ -13,6 +13,7 @@
 + [Study Gitlab CI/CD](./study-gitlab-CICD)
 + [Study Redux](./study-redux)
 + [Study React Testing Library](./study-react-testing-library)
++ [Study Styled Components](./study-styled-components)
 
 ## Others
 
