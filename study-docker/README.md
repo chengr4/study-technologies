@@ -15,7 +15,7 @@ Before:
 
 ```mermaid
 flowchart LR
-  dev((Developer) Atifacts + setting instructions)-->op((Operations)Setting up the env to deploy those applications)
+  dev(*Developer* Atifacts + setting instructions)-->op(*Operations* Setting up the env to deploy those applications)
 
 ```
 
