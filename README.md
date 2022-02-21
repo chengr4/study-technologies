@@ -14,6 +14,7 @@
 + [Study Gitlab CI/CD](./study-gitlab-CICD)
 + [Study Mermaid](./study-mermaids)
 + [Study React Testing Library](./study-react-testing-library)
++ [Study Sequelize](./study-sequelize)
 
 ## Others
 
