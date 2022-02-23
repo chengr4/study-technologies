@@ -12,7 +12,7 @@
 + [Study Gulp](./study-gulp)
 + [Study Github Action](./study-github-action)
 + [Study Gitlab CI/CD](./study-gitlab-CICD)
-+ [Study Mermaid](./study-mermaids)
++ [Study Mermaid](./study-mermaid)
 + [Study React Testing Library](./study-react-testing-library)
 + [Study Sequelize](./study-sequelize)
 
