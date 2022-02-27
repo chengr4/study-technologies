@@ -9,6 +9,7 @@
 + [Study Dotenv](./study-dotenv)
 + [Study Eslint](./study-eslint)
 + [Study Formik and Yup](./study-formik-yup)
++ [Study Firebase](./study-firebase)
 + [Study Gulp](./study-gulp)
 + [Study Github Action](./study-github-action)
 + [Study Gitlab CI/CD](./study-gitlab-CICD)
