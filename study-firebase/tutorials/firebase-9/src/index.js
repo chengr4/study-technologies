@@ -1,5 +1,13 @@
 import { initializeApp } from "firebase/app";
-import { addDoc, collection, deleteDoc, getDocs, doc, getFirestore } from "firebase/firestore";
+import {
+  addDoc,
+  collection,
+  deleteDoc,
+  getDocs,
+  doc,
+  getFirestore,
+  onSnapshot,
+} from "firebase/firestore";
 
 const firebaseConfig = {
   apiKey: "AIzaSyAFk-rr-s2Ggr4IfHEYtJEyP2HEP9z2WkA",
@@ -20,20 +28,29 @@ const db = getFirestore();
 // collection ref
 const colRef = collection(db, "books");
 
-// get collection data
-getDocs(colRef).then((snapshot) => {
+// // get collection data
+// getDocs(colRef).then((snapshot) => {
+//   const books = [];
+//   snapshot.docs.forEach((doc) => {
+//     books.push({ ...doc.data(), id: doc.id});
+//   });
+//   console.log(books);
+// }).catch(err=>{
+//   console.log(err.message);
+// });
+
+// get collection data in realtime
+onSnapshot(colRef, (snapshot) => {
   const books = [];
   snapshot.docs.forEach((doc) => {
-    books.push({ ...doc.data(), id: doc.id});
+    books.push({ ...doc.data(), id: doc.id });
   });
   console.log(books);
-}).catch(err=>{
-  console.log(err.message);
 });
 
 // adding documents
-const addBookForm = document.querySelector('.add');
-addBookForm.addEventListener('submit', (e)=> {
+const addBookForm = document.querySelector(".add");
+addBookForm.addEventListener("submit", (e) => {
   // do not refresh the page
   e.preventDefault();
 
@@ -41,24 +58,24 @@ addBookForm.addEventListener('submit', (e)=> {
   addDoc(colRef, {
     title: addBookForm.title.value,
     author: addBookForm.author.value,
-    }).then(()=>{
-      // reset form
-      addBookForm.reset()
-    });
+  }).then(() => {
+    // reset form
+    addBookForm.reset();
+  });
 });
 
 // deleting documents
-const deleteBookForm = document.querySelector('.delete');
-deleteBookForm.addEventListener('submit', (e)=> {
+const deleteBookForm = document.querySelector(".delete");
+deleteBookForm.addEventListener("submit", (e) => {
   // do not refresh the page
   e.preventDefault();
 
   // get doc ref (target to delete)
-  const docRef = doc(db, 'books', deleteBookForm.id.value);
+  const docRef = doc(db, "books", deleteBookForm.id.value);
 
   // firestore deleteDoc
-  deleteDoc(docRef).then(()=>{
+  deleteDoc(docRef).then(() => {
     // reset form
-    deleteBookForm.reset()
+    deleteBookForm.reset();
   });
 });
