@@ -24,6 +24,39 @@
       <button>delete a book</button>
     </form>
     
+    <form class="update">
+      <label for="id">Doc ID:</label>
+      <input type="text" name="id" required />
+
+      <button>update a book</button>
+    </form>
+
+    <!-- Auth -->
+    <h2>Firebase Auth</h2>
+
+    <form class="signup">
+      <label for="email">Email:</label>
+      <input type="text" name="email" required />
+      <label for="password">password:</label>
+      <input type="password" name="password" required />
+
+      <button>sign up</button>
+    </form>
+
+    <form class="login">
+      <label for="email">Email:</label>
+      <input type="text" name="email" required />
+      <label for="password">password:</label>
+      <input type="password" name="password" required />
+
+      <button>login</button>
+    </form>
+
+    <button class="logout">logout</button>
+
+    <h2>Unsubscribling</h2>
+    <button class="unsub">unsub from db/auth changes</button>
+
     <script src="bundle.js"></script>
   </body>
 </html>
