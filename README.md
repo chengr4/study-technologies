@@ -5,6 +5,7 @@
 + [Study AWS](./study-aws)
 + [Study axios](./study-axios)
 + [Study Canvas](./study-canvas)
++ [Study Code Refactoring](./study-code-refactoring)
 + [Study Docker](./study-docker)
 + [Study Dotenv](./study-dotenv)
 + [Study Eslint](./study-eslint)
