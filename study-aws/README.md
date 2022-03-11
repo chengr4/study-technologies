@@ -13,5 +13,9 @@
 - CloudWatchLambdaInsightsExecutionRolePolicy - 將執行時間指標寫入 CloudWatch Lambda Insights 的許可。
 - AmazonS3ObjectLambdaExecutionRolePolicy – 與 Amazon S3 Object Lambda 互動的權限。
 
+## Cheetsheet
+
+- `aws configure`: 設定 AWS CLI
+
 ## References
 
