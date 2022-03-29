@@ -17,5 +17,7 @@
 
 - `aws configure`: 設定 AWS CLI
 
+> Needs IAM USER access key
+
 ## References
 
