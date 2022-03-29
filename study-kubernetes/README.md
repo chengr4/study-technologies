@@ -46,3 +46,9 @@ It improves
 
 1. prefix searching (random names of a pod issue + one system multiple pods issue)
 2. auto update logs (no need re-run commands)
+
+## Useful aided Tools
+
+- stern
+- kubectx
+
