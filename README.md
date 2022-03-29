@@ -14,6 +14,7 @@
 + [Study Gulp](./study-gulp)
 + [Study Github Action](./study-github-action)
 + [Study Gitlab CI/CD](./study-gitlab-CICD)
++ [Study Kubernetes](./study-kubernetes)
 + [Study Mermaid](./study-mermaid)
 + [Study React Testing Library](./study-react-testing-library)
 + [Study Sequelize](./study-sequelize)
