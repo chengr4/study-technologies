@@ -16,6 +16,8 @@ KUBECONFIG=~/.kube/<name of kube-config> aws eks update-kubeconfig --region <reg
 
 ## Usage
 
+> Copying `kube-config` into `./kube/config` (config is a file) can ignore prefix `KUBECONFIG=~/.kube/<name of kube-config>`
+
 Get namespace
 
 ```
@@ -34,10 +36,10 @@ KUBECONFIG=~/.kube/<name of kube-config> kubectl get pod -n <namespace>
 KUBECONFIG=~/.kube/<name of kube-config> kubectl logs <pod> -n <namespace>
 ```
 
-Better solution
+**Better solution with stern**
 
 ```
-KUBECONFIG=~/.kube/<name of kube-config> stern <pod> -n <namespace>
+KUBECONFIG=~/.kube/<name of kube-config> stern <pod-prefix> -n <namespace>
 ```
 
 > `brew install stern`
@@ -46,6 +48,28 @@ It improves
 
 1. prefix searching (random names of a pod issue + one system multiple pods issue)
 2. auto update logs (no need re-run commands)
+
+**Better solution with stern + kubectx + config file**
+
+```
+// show all contexts (in config file)
+kubectx
+
+// switch to specific context (no need to set namespace anymore)
+kubectx <context>
+```
+
+and easily
+
+```
+stern <pod-prefix>
+```
+
+## Other Commands
+
+```
+kubectl get deployment <pod> -o yaml
+```
 
 ## Useful aided Tools
 
