@@ -36,6 +36,8 @@ KUBECONFIG=~/.kube/<name of kube-config> kubectl get pod -n <namespace>
 KUBECONFIG=~/.kube/<name of kube-config> kubectl logs <pod> -n <namespace>
 ```
 
+---
+
 **Better solution with stern**
 
 ```
@@ -48,6 +50,8 @@ It improves
 
 1. prefix searching (random names of a pod issue + one system multiple pods issue)
 2. auto update logs (no need re-run commands)
+
+---
 
 **Better solution with stern + kubectx + config file**
 
