@@ -19,6 +19,10 @@
 + [Study React Testing Library](./study-react-testing-library)
 + [Study Sequelize](./study-sequelize)
 
+## Things curious
+
+- `npm eject`
+
 ## Others
 
 1. [必備的 Visual Studio Code 套件](https://chiahsien.github.io/post/visual-studio-code-extensions/)
