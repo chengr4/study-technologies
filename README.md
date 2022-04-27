@@ -17,6 +17,7 @@
 + [Study Kubernetes](./study-kubernetes)
 + [Study Mermaid](./study-mermaid)
 + [Study React Testing Library](./study-react-testing-library)
++ [Study RegEx](./study-regex)
 + [Study Sequelize](./study-sequelize)
 
 ## Things curious
