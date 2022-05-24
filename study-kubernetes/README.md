@@ -1,5 +1,10 @@
 # Study Kubernetes
 
+- 更方便管理 containers => scaling...
+- a node is a VM (?) a like-EC2?
+
+---
+
 Install with Homebrew on macOS
 
 ```
