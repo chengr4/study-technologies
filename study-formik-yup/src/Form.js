@@ -11,6 +11,7 @@ const schema = yup.object({
     .max(255),
   confirmPassword: yup.string().when('password', {
     is: (val) => (val && val.length > 0 ? true : false),
+    // "then" provides the true schema
     then: yup.string().oneOf(
       [yup.ref('password')],
       'Both password need to be the same',
