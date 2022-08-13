@@ -16,6 +16,7 @@
 - [Study Gitlab CI/CD](./study-gitlab-CICD)
 - [Study Kubernetes](./study-kubernetes)
 - [Study Mermaid](./study-mermaid)
+- [Study Nginx](./study-nginx/)
 - [Study React Testing Library](./study-react-testing-library)
 - [Study RegEx](./study-regex)
 - [Study Sequelize](./study-sequelize)
