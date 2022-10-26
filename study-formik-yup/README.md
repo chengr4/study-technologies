@@ -9,6 +9,14 @@
 
 Create a validation schema object. Schema objects are **immutable**, so each call of a method returns a new schema object.
 
+### Cheat Sheet
+
+```javascript
+yup.string()
+  .required("Please enter the required field")
+  .matches(/^[aA-zZ\s]+$/, "Only alphabets are allowed for this field ")
+```
+
 ## References
 
 1. [The Net Ninja; React Native Tutorial #30 - Formik Forms (part 1) (2020.1)](https://youtu.be/t4Q1s8WntlA)
