@@ -1,4 +1,8 @@
 # Study Casl
 
-- pronounce castle
+- pronounce "castle"
+
+## References
+
+- [casl examples](https://github.com/stalniy/casl-examples)
 
