@@ -1,5 +1,17 @@
 # Study Docker
 
+## Flows
+
+```mermaid
+flowchart LR
+  id1("Built code + prepared empty image")
+  id2("prepared image")
+  id3("AWS ECR (image storage)")
+  id1 -->|build image| id2
+  id2 -->|store in| id3
+
+```
+
 ## Attributes
 
 - Own isolated env
