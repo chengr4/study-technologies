@@ -75,9 +75,10 @@ E.g.
 | `docker images` | See images |
 | `docker run -d <image>` | Run docker at the background (detached) |
 | `docker run -p <port of host:port of container> <image>` | `-p`: bind ports |
-| `docker stop <ID of container>` | Stop the container |
+| `docker start <ID or name of the container>` | Start the container |
+| `docker stop <ID or name of the container>` | Stop the container |
 | `docker pull <image>:<tag>` | pull image from internet |
-| `docker exec -it <container_name or _id>` | Run commands in the container, `-it:` interactive TTY session |
+| `docker exec -it <container_name or _id> [/bin/sh | psql -U <USER_NAME>]` | Run commands in the container, `-it:` interactive TTY session |
 | `docker logs <container_name or _id> ` | logs in container |
 
 ## References
