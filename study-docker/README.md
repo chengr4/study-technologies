@@ -44,6 +44,7 @@ Q: What is a Container?
 
 A: 
 
+- We can start multiple container from 1 single image
 - Layers of images: E.g. Linux base image alpine + application image postgres  on top of it
 - A way to package application with all the necessary dependencies and configuration
 - Protable artifact, easily shared and moved around 
@@ -74,7 +75,10 @@ E.g.
 | `docker images` | See images |
 | `docker run -d <image>` | Run docker at the background (detached) |
 | `docker run -p <port of host:port of container> <image>` | `-p`: bind ports |
-| `docker stop <ID of container>` | Stop the  container |
+| `docker stop <ID of container>` | Stop the container |
+| `docker pull <image>:<tag>` | pull image from internet |
+| `docker exec -it <container_name or _id>` | Run commands in the container, `-it:` interactive TTY session |
+| `docker logs <container_name or _id> ` | logs in container |
 
 ## References
 
