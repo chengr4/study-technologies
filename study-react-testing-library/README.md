@@ -78,6 +78,15 @@ afterEach(() => {console.log("Running after each test");});
 afterAll(() => {console.log("Running once after all tests");});
 ```
 
+### afterEach();
+
+```javascript
+// clean up after each test (all tests from the same start poi)
+afterEach(() => {
+  cleanup();
+});
+```
+
 ## Mock Service Worker
 
 `yarn add msw --dev`
