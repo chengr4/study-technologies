@@ -61,6 +61,10 @@ jobs:
   runs-on: ubuntu-latest # the runner
 ```
 
+## Job
+
+- Is a set of **steps** executed on the same runner
+
 ## References
 
 1. [TechWorld with Nana; GitHub Actions Tutorial - Basic Concepts and CI/CD Pipeline with Docker (2020.10)](https://youtu.be/R8_veQiYBjI)
