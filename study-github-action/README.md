@@ -46,6 +46,21 @@ jobs:
 
 `run`: Runs a command-line command
 
+## Runner
+
+In order to run the jobs, we must specify a runner for each of them
+
+- Is a erver that listens for available jobs
+- It runs 1 job at a time
+- Github hosted or self hosted
+- Report progress, logs and result to Github
+
+```yml
+jobs:
+  build:
+  runs-on: ubuntu-latest # the runner
+```
+
 ## References
 
 1. [TechWorld with Nana; GitHub Actions Tutorial - Basic Concepts and CI/CD Pipeline with Docker (2020.10)](https://youtu.be/R8_veQiYBjI)
