@@ -22,6 +22,7 @@
 - [Study React Testing Library](./study-react-testing-library)
 - [Study RegEx](./study-regex)
 - [Study Sequelize](./study-sequelize)
+- [SSH](./ssh/)
 
 ## Things curious
 
