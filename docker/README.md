@@ -12,6 +12,12 @@ flowchart LR
 
 ```
 
+## Steps
+
+eg, for golang
+
+1. search official golang image in docker hub
+
 ## Attributes
 
 - Own isolated env
@@ -75,11 +81,19 @@ E.g.
 | `docker images` | See images |
 | `docker run -d <image>` | Run docker at the background (detached) |
 | `docker run -p <port of host:port of container> <image>` | `-p`: bind ports |
+| `docker run -p <x:x> -e <env_variable> <image_tag>` ||
 | `docker start <ID or name of the container>` | Start the container |
 | `docker stop <ID or name of the container>` | Stop the container |
 | `docker pull <image>:<tag>` | pull image from internet |
 | `docker exec -it <container_name or _id> [/bin/sh | psql -U <USER_NAME>]` | Run commands in the container, `-it:` interactive TTY session |
-| `docker logs <container_name or _id> ` | logs in container |
+| `docker logs <container_name or _id> ` | Logs in container |
+| `docker build --tag <name:version> <folder>` |  |
+| `docker rm <image_ID>` | Remove a running container |
+| `docker rmi <image_ID>` | Remove a image |
+| `docker container inspect <container_name>` | Check the network settings |
+| `docker network ls` |  |
+| `docker network inspect <name>` |  |
+| `docker network create <name_to_create>` |  |
 
 ## References
 
