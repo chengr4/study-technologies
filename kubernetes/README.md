@@ -19,6 +19,13 @@ KUBECONFIG=~/.kube/<name of kube-config> aws eks update-kubeconfig --region <reg
 
 > May need extra values in kube config file to get authorized
 
+## Advandtages
+
+1. Dynamic scaling: Detect traffic and automatically increase computation resources
+2. Self Healing: Rebuild broken app
+3. Zero-downtime rolling udpate: When deploying a new verion, the user will not feel about it (system never turns down)
+3. Zero-downtime rollback: When downgrading a verion, the user will not feel about it (system never turns down)
+
 ## Usage
 
 > Copying `kube-config` into `./kube/config` (config is a file) can ignore prefix `KUBECONFIG=~/.kube/<name of kube-config>`
@@ -85,3 +92,6 @@ kubectl get deployment <pod> -o yaml
 - stern
 - kubectx
 
+## References
+
+1. [Kubernetes (K8S) 解決了什麼問題？【四大功用】(2023.01)](https://youtu.be/irf95K4N-1g)
