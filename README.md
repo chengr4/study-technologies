@@ -3,6 +3,7 @@
 ## Contents
 
 - [Docker](./docker/)
+- [Kubernetes](./kubernetes/)
 - [npm library](./npm-lib/)
 - [Study AWS](./study-aws)
 - [Study Canvas](./study-canvas)
@@ -13,7 +14,6 @@
 - [Study Gulp](./study-gulp)
 - [Study Github Action](./study-github-action)
 - [Study Gitlab CI/CD](./study-gitlab-CICD)
-- [Study Kubernetes](./study-kubernetes)
 - [Study Mermaid](./study-mermaid)
 - [Study Neovim](./study-neovim/)
 - [Study Nginx](./study-nginx/)
