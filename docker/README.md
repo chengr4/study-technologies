@@ -12,12 +12,6 @@ flowchart LR
 
 ```
 
-## Steps
-
-eg, for golang
-
-1. search official golang image in docker hub
-
 ## Attributes
 
 - Own isolated env
@@ -71,6 +65,8 @@ A:
 
 ## Commands
 
+### docker
+
 E.g.
 
 - `docker run postgres:9.6`
@@ -94,6 +90,13 @@ E.g.
 | `docker network ls` |  |
 | `docker network inspect <name>` |  |
 | `docker network create <name_to_create>` |  |
+
+### docker Compose
+
+| Command | Description |
+| -------| ------------ | 
+| `docker compose up` | |
+| `docker compose down` | Remove all existing containers and networks |
 
 ## References
 
