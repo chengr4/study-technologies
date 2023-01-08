@@ -1,5 +1,11 @@
 # Study AWS
 
+## RDS
+
+- By default, the DB will bee deployed inside the default virtual private cloud (VPC)
+
+- Public access: if want local to connect, please set true
+
 ## Lambda
 
 - AWSLambdaBasicExecutionRole - 將日誌上傳至 CloudWatch 的許可。
