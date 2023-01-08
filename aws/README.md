@@ -19,6 +19,22 @@
 - CloudWatchLambdaInsightsExecutionRolePolicy - 將執行時間指標寫入 CloudWatch Lambda Insights 的許可。
 - AmazonS3ObjectLambdaExecutionRolePolicy – 與 Amazon S3 Object Lambda 互動的權限。
 
+## ECR
+
+| Command | Description |
+| ------- | ----------- |
+| `aws ecr get-login-password` | returns authentication token |
+
+
+## AWS Secrets Manager
+
+> For environment variables
+
+| Command | Description |
+| ------- | ----------- |
+| `aws secretsmanager help` ||
+| `aws secretsmanager get-secret-value --secret <name> --query SecretString --output text` | `--output text`: get JSON in termial instead of string |
+
 ## Cheetsheet
 
 - `aws configure`: 設定 AWS CLI
