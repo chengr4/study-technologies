@@ -2,10 +2,10 @@
 
 ## Contents
 
+- [AWS](./aws/)
 - [Docker](./docker/)
 - [Kubernetes](./kubernetes/)
 - [npm library](./npm-lib/)
-- [Study AWS](./study-aws)
 - [Study Canvas](./study-canvas)
 - [Study Code Refactoring](./study-code-refactoring)
 - [Study Dotenv](./study-dotenv)
