@@ -5,6 +5,7 @@
 - [AWS](./aws/)
 - [Docker](./docker/)
 - [Kubernetes](./kubernetes/)
+- [jq](./jq/)
 - [npm library](./npm-lib/)
 - [Study Canvas](./study-canvas)
 - [Study Code Refactoring](./study-code-refactoring)
