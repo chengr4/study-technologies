@@ -24,6 +24,7 @@ flowchart LR
   end
 
   subgraph worker-node
+    kubelet
     kubelet --> pod1
     kubelet --> pod2
     kube-proxy
