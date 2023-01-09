@@ -3,6 +3,30 @@
 - 更方便管理 containers => scaling...
 - a node is a VM (?) a like-EC2?
 
+K8s cmomponents contains two parts
+
+- Worker Node: Run contained applications
+  - Kubelet agent: make sure containers run inside pods
+  - Container runtimes such as Docker, containerd, CRI-O
+  - Kube-proxy: maintain network rules, allow communication with pods
+- Master Node (control plane): manage the work node and pods of the cluster
+
+```mermaid
+flpwchart LR
+  subgraph worker-node
+    kubelet --> pod1
+    kubelet --> pod2
+    kube-proxy
+  end
+  
+  subgraph master-node
+    kubelet --> api-server
+    kube-proxy --> api-server
+  end
+
+  master-node --> worker-node
+```
+
 ---
 
 Install with Homebrew on macOS
