@@ -12,7 +12,7 @@ K8s cmomponents contains two parts
 - Master Node (control plane): manage the work node and pods of the cluster
 
 ```mermaid
-flpwchart LR
+flowchart LR
   subgraph worker-node
     kubelet --> pod1
     kubelet --> pod2
