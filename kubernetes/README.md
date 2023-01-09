@@ -10,21 +10,28 @@ K8s cmomponents contains two parts
   - Container runtimes such as Docker, containerd, CRI-O
   - Kube-proxy: maintain network rules, allow communication with pods
 - Master Node (control plane): manage the work node and pods of the cluster
+  - etcd: backing store for all cluster data
 
 ```mermaid
 flowchart LR
+  subgraph master-node
+    kubelet --> api-server
+    kube-proxy --> api-server
+    etcd
+    scheduler
+    controller-manager
+    cloud-controller-manager
+  end
+
   subgraph worker-node
     kubelet --> pod1
     kubelet --> pod2
     kube-proxy
   end
-  
-  subgraph master-node
-    kubelet --> api-server
-    kube-proxy --> api-server
-  end
 
   master-node --> worker-node
+  cloud-controller-manager --> Cloud-provider-api
+
 ```
 
 ---
