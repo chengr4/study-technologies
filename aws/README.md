@@ -1,5 +1,7 @@
 # Study AWS
 
+- [EKS](#eks)
+
 ## RDS
 
 - By default, the DB will bee deployed inside the default virtual private cloud (VPC)
@@ -22,6 +24,20 @@
 - AWSXRayDaemonWriteAccess - 將追蹤資料上傳至 X-Ray 的許可。
 - CloudWatchLambdaInsightsExecutionRolePolicy - 將執行時間指標寫入 CloudWatch Lambda Insights 的許可。
 - AmazonS3ObjectLambdaExecutionRolePolicy – 與 Amazon S3 Object Lambda 互動的權限。
+
+## EKS
+
+### Master Nodes
+
+### Worker Nodes
+
+- Worker nodes will run in group: A collection of EC2 at the same type
+
+Policies:
+
+- CNI P:olicy: to modify the IP address configuration on your worker nodes
+- Woker Node Policy: Allow the worker nodes to connect to the EKS cluster
+- EC2ContainerRegistryReadOnly: pull images from ECR
 
 ## ECR
 
