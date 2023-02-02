@@ -7,6 +7,7 @@
 - [jq](./jq/)
 - [Kubernetes](./kubernetes/)
 - [npm Library](./npm-lib/)
+- [React Testing Library](./react-testing-library/)
 - [Session Management](./session-management/)
 - [Study Canvas](./study-canvas)
 - [Study Code Refactoring](./study-code-refactoring)
@@ -19,7 +20,6 @@
 - [Study Mermaid](./study-mermaid)
 - [Study Neovim](./study-neovim/)
 - [Study Nginx](./study-nginx/)
-- [Study React Testing Library](./study-react-testing-library)
 - [Study RegEx](./study-regex)
 - [SSH](./ssh/)
 
