@@ -1,6 +1,10 @@
 # Study React Testing Library
 
-1. A testing file is usually named `<Component>.test.js`. E.g. `App.test.js`
+- A testing file is usually named `<Component>.test.js`. E.g. `App.test.js`
+
+Index:
+
+- [Mock](#mock)
 
 ## In Test Block
 
@@ -86,8 +90,9 @@ afterEach(() => {
   cleanup();
 });
 ```
+## Mock
 
-## Mock Service Worker
+### Mock Service Worker
 
 `yarn add msw --dev`
 
