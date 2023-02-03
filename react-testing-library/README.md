@@ -5,6 +5,7 @@
 Index:
 
 - [Mock](#mock)
+- [Tips](#tips)
 
 ## In Test Block
 
@@ -63,6 +64,10 @@ test('render same text passed into title prop', async () => {
   expect(headingElement).toBeInTheDocument();
 });
 ```
+
+2. Priority
+
+(High) getByRole, getByLebelText, getByPlaceholderText, getByTest => getByTitle, getByAltText => getByTestId 
 
 ## Descirbe Block
 
