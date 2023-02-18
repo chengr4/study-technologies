@@ -1,5 +1,13 @@
 # jq
 
+## Common Usages
+
+```bash
+cat xxx.json | jq .
+```
+
+## Other Commands
+
 ```
 jq 'to_entries'
 
