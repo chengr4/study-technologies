@@ -61,5 +61,9 @@ Policies:
 
 > Needs IAM USER access key
 
+## Materials
+
+- [how Lambda@edge function works between CloudFront and Origin Server](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/lambda-cloudfront-trigger-events.html)
+
 ## References
 
