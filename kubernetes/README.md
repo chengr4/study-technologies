@@ -117,7 +117,7 @@ stern <pod-prefix>
 
 | Command | Description |
 | ------- | ----------- |
-| `kubectl get deploy <pod> -o=jsonpath='{$.spec.template.spec.containers[:1].image}' -n <namespace> | Get image info in the container |
+| `kubectl get deploy <pod> -o=jsonpath='{$.spec.template.spec.containers[:1].image}' -n <namespace>` | Get image info in the container |
 
 ## Useful aided Tools
 
