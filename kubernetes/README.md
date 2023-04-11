@@ -64,19 +64,19 @@ KUBECONFIG=~/.kube/<name of kube-config> aws eks update-kubeconfig --region <reg
 
 Get namespace
 
-```
+```sh
 KUBECONFIG=~/.kube/<name of kube-config> kubectl get namespace
 ```
 
 Get pod
 
-```
+```sh
 KUBECONFIG=~/.kube/<name of kube-config> kubectl get pod -n <namespace>
 ```
 
 ### Get logs of pod
 
-```
+```sh
 KUBECONFIG=~/.kube/<name of kube-config> kubectl logs <pod> -n <namespace>
 ```
 
@@ -84,7 +84,7 @@ KUBECONFIG=~/.kube/<name of kube-config> kubectl logs <pod> -n <namespace>
 
 **Better solution with stern**
 
-```
+```shs
 KUBECONFIG=~/.kube/<name of kube-config> stern <pod-prefix> -n <namespace>
 ```
 
@@ -99,25 +99,25 @@ It improves
 
 **Better solution with stern + kubectx + config file**
 
-```
-// show all contexts (in config file)
+```sh
+# show all contexts (in config file)
 kubectx
 
-// switch to specific context (no need to set namespace anymore)
+# switch to specific context (no need to set namespace anymore)
 kubectx <context>
 ```
 
 and easily
 
-```
+```sh
 stern <pod-prefix>
 ```
 
 ## Other Commands
 
-```
-kubectl get deployment <pod> -o yaml
-```
+| Command | Description |
+| ------- | ----------- |
+| `kubectl get deploy <pod> -o=jsonpath='{$.spec.template.spec.containers[:1].image}' -n <namespace> | Get image info in the container |
 
 ## Useful aided Tools
 
