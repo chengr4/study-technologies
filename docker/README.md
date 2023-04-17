@@ -1,5 +1,17 @@
 # Study Docker
 
+## Installation
+
+1. Install Docker Desktop
+
+> docker cli will be also installed
+
+### Install and Postgres Image
+
+1. Go to dockerhub and search `postgres` and use offical one
+2. Pull the image: `docker pull postgres:<tag>`
+3. Run `docker images` to check it 
+
 ## Flows
 
 ```mermaid
