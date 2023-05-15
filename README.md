@@ -4,6 +4,7 @@
 
 - [AWS](./aws/)
 - [Docker](./docker/)
+- [Github Action](./github-action/)
 - [jq](./jq/)
 - [Kubernetes](./kubernetes/)
 - [npm Library](./npm-lib/)
@@ -15,7 +16,6 @@
 - [Study Eslint](./study-eslint)
 - [Study Firebase](./study-firebase)
 - [Study Gulp](./study-gulp)
-- [Study Github Action](./study-github-action)
 - [Study Gitlab CI/CD](./study-gitlab-CICD)
 - [Study Mermaid](./study-mermaid)
 - [Study Neovim](./study-neovim/)
