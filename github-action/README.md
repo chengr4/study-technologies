@@ -3,6 +3,7 @@
 ## What is Github Actions?
 
 - Platform to automate developer workflows
+- Triggered by events happening on the Github repo, schedule or manually click button to run it
 
 Workfow Example:
 
@@ -31,15 +32,19 @@ on:
     branch: [ master ]
   pull_request:
     branch: [ master ]
-    
+  schedule:
+    - cron: '*/15 * * * *'
+
 # Triggered Workflow
-#
 jobs:
-  build: this can be arbitrary (name it yourself)
+  build: # build job (name it yourself)
   
-    runs-on:
+    runs-on: ubuntu-latest # the runner
       steps: 
       - uses: actions/checkout@v2
+    
+  test: # test job
+    needs: build # depend on build
 ```
 
 `uses`: Selects an action
@@ -54,12 +59,6 @@ In order to run the jobs, we must specify a runner for each of them
 - It runs 1 job at a time
 - Github hosted or self hosted
 - Report progress, logs and result to Github
-
-```yml
-jobs:
-  build:
-  runs-on: ubuntu-latest # the runner
-```
 
 ## Job
 
