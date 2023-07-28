@@ -97,9 +97,9 @@ E.g.
 | `docker rm <image_ID>` | Remove a running container |
 | `docker rmi <image_ID>` | Remove a image |
 | `docker container inspect <container_name>` | Check the network settings |
-| `docker network ls` |  |
-| `docker network inspect <name>` |  |
-| `docker network create <name_to_create>` |  |
+| `docker network ls` | eg. bridge |
+| `docker network inspect bridge` | Check who is using bridge network |
+| `docker network create <name_to_create>` | Create the own network eg to bind two standalone containers |
 
 ### docker Compose
 
