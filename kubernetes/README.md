@@ -35,17 +35,26 @@ flowchart LR
 
 ```
 
----
+## `kebectl`
 
 Install with Homebrew on macOS
 
-```
+```sh
 brew install kubectl
 ```
 
+By default, kubectl configuration is located at `~/.kube/config`.
+
+
+## Other Commands
+
+| Command | Description |
+| ------- | ----------- |
+| `kubectl get deploy <pod> -o=jsonpath='{$.spec.template.spec.containers[:1].image}' -n <namespace>` | Get image info in the container |
+
 Update AWS EKS
 
-```
+```sh
 KUBECONFIG=~/.kube/<name of kube-config> aws eks update-kubeconfig --region <region> --name <name>
 ```
 
@@ -113,16 +122,11 @@ and easily
 stern <pod-prefix>
 ```
 
-## Other Commands
-
-| Command | Description |
-| ------- | ----------- |
-| `kubectl get deploy <pod> -o=jsonpath='{$.spec.template.spec.containers[:1].image}' -n <namespace>` | Get image info in the container |
-
 ## Useful aided Tools
 
 - stern
 - kubectx
+- k9s
 
 ## References
 
