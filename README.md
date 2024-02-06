@@ -30,3 +30,4 @@
 ## Others
 
 1. [必備的 Visual Studio Code 套件](https://chiahsien.github.io/post/visual-studio-code-extensions/)
+2. [Developer tools](https://hackmd.io/@sysprog/gnu-linux-dev/https%3A%2F%2Fhackmd.io%2F%40sysprog%2Fr1Psrf0KW?fbclid=IwAR07vPqCuYB8KAv8Y2X4OG7Y0kebsYNpzb4wpIjb7ySBjtkOtuDCVPtMwk0)
