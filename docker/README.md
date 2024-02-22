@@ -84,6 +84,7 @@ E.g.
 | Command | Description |
 | ------- | ----------- | 
 | `docker ps` | See all running docker containers |
+| `docker ps -a` | See all containers (running and not running) |
 | `docker images` | See images |
 | `docker run -d <image>` | Run docker at the background (detached) |
 | `docker run -p <port of host:port of container> <image>` | `-p`: bind ports |
