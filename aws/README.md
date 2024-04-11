@@ -5,12 +5,7 @@
 ## RDS
 
 - By default, the DB will bee deployed inside the default virtual private cloud (VPC)
-
 - Public access: if want local to connect, please set true
-
-## Elastic Kubernetes Service (EKS)
-
-
 
 ## Lambda
 
@@ -30,7 +25,6 @@
 | Command | Description |
 | ------- | ----------- |
 | `aws ecr get-login-password` | returns authentication token |
-
 
 ## AWS Secrets Manager
 

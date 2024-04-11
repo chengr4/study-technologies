@@ -6,9 +6,13 @@ To fetch the AWS EKS cluster's information and store it in the config file
 aws eks udpate-kubeconfig --name <cluster_name> --region <region>
 ```
 
-### Master Nodes
+## Permissions
 
-### Worker Nodes
+
+
+## Master Nodes
+
+## Worker Nodes
 
 - Worker nodes will run in group: A collection of EC2 at the same type
 

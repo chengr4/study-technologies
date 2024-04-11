@@ -51,6 +51,7 @@ By default, kubectl configuration is located at `~/.kube/config`.
 | Command | Description |
 | ------- | ----------- |
 | `kubectl get deploy <pod> -o=jsonpath='{$.spec.template.spec.containers[:1].image}' -n <namespace>` | Get image info in the container |
+| `kubectl config use-context <context>` | switch context |
 
 Update AWS EKS
 
