@@ -93,7 +93,7 @@ E.g.
 | `docker stop <ID or name of the container>` | Stop the container |
 | `docker pull <image>:<tag>` | pull image from internet |
 | `docker exec -it <container_name or _id> [/bin/sh (or) psql -U <USER_NAME>]` | Go to shell in the container, `-it:` interactive TTY session |
-| `docker logs <container_name or _id> ` | Logs in container |
+| `docker logs <container_name or _id> -f ` | Logs in container, `if`: living logs |
 | `docker build --tag <name:version> <folder>` |  |
 | `docker rm <image_ID>` | Remove a running container |
 | `docker rmi <image_ID>` | Remove a image |
