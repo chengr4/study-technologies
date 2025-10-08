@@ -2,6 +2,7 @@
 
 ## Contents
 
+- [AI](./ai/)
 - [AWS](./aws/)
 - [Docker](./docker/)
 - [Github Action](./github-action/)
@@ -10,6 +11,7 @@
 - [npm Library](./npm-lib/)
 - [React Testing Library](./react-testing-library/)
 - [Session Management](./session-management/)
+- [Superbase](./superbase/)
 - [Study Canvas](./study-canvas)
 - [Study Code Refactoring](./study-code-refactoring)
 - [Study Dotenv](./study-dotenv)
@@ -22,10 +24,6 @@
 - [Study Nginx](./study-nginx/)
 - [Study RegEx](./study-regex)
 - [SSH](./ssh/)
-
-## Things curious
-
-- `npm eject`
 
 ## Others
 
