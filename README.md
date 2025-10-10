@@ -6,6 +6,7 @@
 - [AWS](./aws/)
 - [Docker](./docker/)
 - [Github Action](./github-action/)
+- [GDB](gdb.md)
 - [jq](./jq/)
 - [Kubernetes](./kubernetes/)
 - [npm Library](./npm-lib/)
