@@ -1,0 +1,54 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{amsfonts, amssymb, amsmath}
+\usepackage{fullpage}
+\usepackage{parskip} % skip a line instead of indenting
+% \usepackage{graphicx} % for inserting images
+\usepackage{amsthm}
+\usepackage{xcolor}
+\usepackage{tikz} % for plot
+
+\title{Proves}
+\author{R4 Cheng}
+\date{\today}
+
+\newcommand{\remark}[1]{
+    $>$ {\color{blue} #1}
+}
+
+\begin{document}
+\maketitle
+
+Cost function:
+
+\[J(\vec{w}) = \frac{1}{2} \sum_{(\vec{x}, y) \in D} (f_{\vec{w}}(\vec{x}) - y)^2\]
+
+Target:
+
+\[\min_{\vec{w}} J(\vec{w})\]
+
+\subsection*{Gradient Descent}
+
+Start from an arbitrary initial weight vector $\vec{w}$.
+
+\[\vec{w'} \leftarrow \vec{w} - \alpha \Delta J(\vec{w}) = \vec{w} - \alpha \frac{\partial}{\partial \vec{w}}J(\vec{w})\]
+
+\remark{$\alpha$ is called learning rate}
+
+And for a single training example $(\vec{x}, y)$, we have:
+
+\[\vec{w'} \leftarrow \vec{w} - \alpha(\vec{w} \cdot \vec{x} - y)\vec{x} = \vec{w} + \alpha(y - \vec{w} \cdot \vec{x})\vec{x}\]
+
+Aka. the least mean square (LMS) udpate rule.
+
+\remark{vs perceptron: $\vec{w'} = \vec{w} + y\cdot\vec{x}$}
+
+\begin{align*}
+Derivation:
+\frac{\partial}{\partial \vec{w}}J(\vec{w}) &= \frac{\partial}{\partial \vec{w}}\frac{1}{2}(f(\vec{x}) -y)^2\\
+&= 2 \cdot \frac{1}{2}(f(\vec{x}) - y) \cdot \frac{\partial}{\partial \vec{w}}(f(\vec{x}) - y) \quad \text{// Chain Rule}\\
+&= (\vec{w} \cdot \vec{x} - y) \cdot \frac{\partial}{\partial \vec{w}}(\vec{w} \cdot \vec{x} - y)\\
+&= (\vec{w} \cdot \vec{x} - y)\vec{x}
+\end{align*}
+
+
+\end{document}
