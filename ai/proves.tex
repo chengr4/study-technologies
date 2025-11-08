@@ -18,15 +18,26 @@
 \begin{document}
 \maketitle
 
-Cost function:
+\subsection*{Cost function}
 
-\[J(\vec{w}) = \frac{1}{2} \sum_{(\vec{x}, y) \in D} (f_{\vec{w}}(\vec{x}) - y)^2\]
+$L_2$:
+
+\[J(\vec{w}) = \frac{1}{2} \sum_{(\vec{x}, y) \in D} (f_{\vec{w}}(\vec{x}) - y)^2 + \lambda\lVert\vec{w}\rVert_2^2\]
+
+\remark{Euclidean norm: $\lVert\vec{w}\rVert_2 = \sqrt{w_0^2+w_1^2 + \dots + w_n^2}$}
+
+$L_1$:
+
+\[J(\vec{w}) = \frac{1}{2} \sum_{(\vec{x}, y) \in D} (f_{\vec{w}}(\vec{x}) - y)^2 + \lambda\lVert\vec{w}\rVert_1^2\]
+
+\remark{Manhattan norm: $\lVert\vec{w}\rVert_1 = |w_0| + |w_1| + \dots + |w_n|$}
+
 
 Target:
 
 \[\min_{\vec{w}} J(\vec{w})\]
 
-\subsection*{Gradient Descent}
+\subsection*{(Batch) Gradient Descent}
 
 Start from an arbitrary initial weight vector $\vec{w}$.
 
@@ -50,5 +61,32 @@ Derivation:
 &= (\vec{w} \cdot \vec{x} - y)\vec{x}
 \end{align*}
 
+Therefore, for the whole dataset $D$:
+
+\[\vec{w'} \leftarrow \vec{w} + \alpha \sum_{(\vec{x},y) \in D}(y - \vec{w} \cdot \vec{x}) \vec{x}\]
+
+\subsection*{Stochastic Gradient Descent}
+
+Streamline BGD:
+
+\[\vec{w'} \leftarrow \vec{w} + \alpha(y_i - \vec{w} \cdot \vec{x}_i)\vec{x}_i\]
+
+Where $(\vec{x}_i, y_i)$ is a randomly picked training example from $D$.
+
+\subsection*{Mini-Batch Gradient Descent}
+
+\remark{Balance between GD and SGD}
+
+\[\vec{w'} \leftarrow \vec{w} + \alpha \sum_{(\vec{x},y) \in D_m}(y - \vec{w} \cdot \vec{x})\vec{x}\]
+
+Where $D_m \subset D$ is a randomly picked $m$ examples of training data.
+
+\subsection*{Ridge regression gradient descent}
+
+\remark{$L_2$, becuase it is differentiable}
+
+\[\vec{w'} \leftarrow \vec{w} + \alpha \sum_{(\vec{x},y) \in D}(y - \vec{w} \cdot \vec{x}) \vec{x} - \lambda \vec{w}\]
+
+The function of $\lambda \vec{w}$ is to decrease the magnitude of $\vec{w}$, leading to reduced model complexity and overfitting.
 
 \end{document}
