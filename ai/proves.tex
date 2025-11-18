@@ -89,4 +89,56 @@ Where $D_m \subset D$ is a randomly picked $m$ examples of training data.
 
 The function of $\lambda \vec{w}$ is to decrease the magnitude of $\vec{w}$, leading to reduced model complexity and overfitting.
 
+\section*{Normal Equation}
+
+TODO
+
+\section*{Deep Learning}
+
+\subsection*{Activation Functions}
+
+The activation function introduces non-linearity into the model (network), enabling it to learn and represent complex patterns in the data.
+
+\begin{itemize}
+    \item Sigmoid: $\sigma(x) = \frac{1}{1 + e^{-x}} \Rightarrow$ Usually for binary classification questions.
+    
+    \begin{center}
+    \begin{tikzpicture}[scale=0.8]
+        \draw[->] (-4,0) -- (4,0) node[right] {$x$};
+        \draw[->] (0,-0.5) -- (0,2) node[above] {$\sigma(x)$};
+        \draw[blue, thick, domain=-4:4, samples=100] plot (\x, {1/(1+exp(-\x))});
+        \draw[dashed] (-4,1) -- (4,1);
+        \node[below] at (0,0) {$0$};
+        \node[left] at (0,1) {$1$};
+    \end{tikzpicture}
+    \end{center}
+    
+    \item Hyperbolic Tangent (Tanh): $\tanh(x) = \frac{e^x - e^{-x}}{e^x + e^{-x}} \Rightarrow$ Make data zero-centered which can speed up convergence.
+    
+    \begin{center}
+    \begin{tikzpicture}[scale=0.8]
+        \draw[->] (-4,0) -- (4,0) node[right] {$x$};
+        \draw[->] (0,-2) -- (0,2) node[above] {$\tanh(x)$};
+        \draw[blue, thick, domain=-4:4, samples=100] plot (\x, {tanh(\x)});
+        \draw[dashed] (-4,1) -- (4,1);
+        \draw[dashed] (-4,-1) -- (4,-1);
+        \node[below] at (0,0) {$0$};
+        \node[left] at (0,1) {$1$};
+        \node[left] at (0,-1) {$-1$};
+    \end{tikzpicture}
+    \end{center}
+    
+    \item Rectified Linear Unit (ReLU): $\text{ReLU}(x) = \max(0, x) \Rightarrow$ Only allows positive values to pass through.
+    
+    \begin{center}
+    \begin{tikzpicture}[scale=0.8]
+        \draw[->] (-4,0) -- (4,0) node[right] {$x$};
+        \draw[->] (0,-0.5) -- (0,3) node[above] {$\text{ReLU}(x)$};
+        \draw[blue, thick] (-4,0) -- (0,0);
+        \draw[blue, thick] (0,0) -- (3,3);
+        \node[below] at (0,0) {$0$};
+    \end{tikzpicture}
+    \end{center}
+\end{itemize}
+
 \end{document}

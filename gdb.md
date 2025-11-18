@@ -16,6 +16,7 @@
 | backtrace | show call stack |
 | step or s or n | step into next line of code |
 | p <variable name> | print variable value |
+| thread apply all bt | see where everything is blocked |
 
 - `p /x *p`: print value pointed to by pointer `p` in hex
     - `*p`: dereference pointer
