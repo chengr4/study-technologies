@@ -10,6 +10,14 @@ Regularization is a technique that can be used to **prevent overfitting** in lin
 
 Regularization is an important technique for improving the performance of linear regression models, **especially when dealing with high-dimensional data or limited amounts of training data.**
 
+Common regulariazation techniques include:
+
+- L1 regularization (Lasso regression)
+- L2 regularization (Ridge regression)
+- Dropout (for neural networks)
+- early stopping (for iterative algorithms)
+    - 當模型在驗證集 (dev) 上的性能開始惡化時，就停止訓練過程。
+
 ### L2 Regularization (Ridge Regression)
 
 趨向於產生「平滑」的解，能防止模型過度擬合。

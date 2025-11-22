@@ -18,7 +18,9 @@
 \begin{document}
 \maketitle
 
-\subsection*{Cost function}
+\subsection*{Loss (Cost) function}
+
+\remark{aka. how to reward a machine}
 
 $L_2$:
 
@@ -140,5 +142,26 @@ The activation function introduces non-linearity into the model (network), enabl
     \end{tikzpicture}
     \end{center}
 \end{itemize}
+
+\subsection*{Word Embeddings}
+
+\subsubsection*{Cosine Similarity}
+
+Cosine similarity measures the relationship between word vectors in an embedding space.
+
+\[\text{Cosine Similarity}(\mathbf{A}, \mathbf{B}) = \frac{\mathbf{A} \cdot \mathbf{B}}{\|\mathbf{A}\| \|\mathbf{B}\|} = \frac{\sum_{i=1}^{n} A_i B_i}{\sqrt{\sum_{i=1}^{n} A_i^2} \sqrt{\sum_{i=1}^{n} B_i^2}}\]
+\[-1 \ge \text{Cosine Similarity}(\mathbf{A}, \mathbf{B}) \le 1\]
+
+\begin{itemize}
+    \item $1$: Vectors are identical (high semantic similarity)
+    \item $0$: Vectors are orthogonal (no semantic similarity)
+    \item $-1$: ?????
+\end{itemize}
+
+\subsubsection*{Dimensionality Reduction}
+
+E.g. 7D to 2D
+
+\remark{Using e.g. PCA, t-SNE, UMAP}
 
 \end{document}
